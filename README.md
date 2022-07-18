@@ -7,16 +7,17 @@ Internet is a place used by almost all citizens in the world to search news arti
 This project used scraped data from [TurnBackHoax.id](https://turnbackhoax.id/) using BeatifulSoup by running `news.py`. TurnBackHoax.ID is a site managed by the Indonesian anti-hoax forum (MAFINDO). Data was collected from July 31, 2015 to June 26, 2022 with a total of about 9 thousand data and 2 columns (`title` and `label`).
 
 ## Goal
-Goal of this project is to see which topics that are often made into fake news using LDA model. The model will produce a different number of topics and then will be evaluated using coherence score.
+Goal of this project is to see which topics that are often made into fake news using LDA model and BERT model (Transformer). The model will produce a different number of topics, as for LDA model will be evaluated using coherence score.
 
 ## Conclusion / Result
 
-LDA model was able to be fitted with two different corpus, Bag of Words corpus and TF-IDF corpus. LDA + BoW model produces a coherence score of 0.58 with total 16 topics. While LDA + TF-IDF model produces higher coherence score of 0.60 with the same amount of topics, which is 16 topics in total. The result of the two model are presented below in the form of a table:
+LDA model was able to be fitted with two different corpus, Bag of Words corpus and TF-IDF corpus. LDA + BoW model produces a coherence score of 0.58 with total 14 topics. While LDA + TF-IDF model produces higher coherence score of 0.63 with the more number of topics, which is 18 topics in total. As for BERT, the model produces ~60 topics. The result of the 3 model are presented below in the form of a table:
 
-|Model|Coherence Score|Number of Topics|
-|---|---|:---:|
-|LDA + BoW|0.5892086305241839|16|
-|LDA + TF-IDF|0.6045645358106211|16|
+|Model|Number of Topics|
+|:---:|:---:|
+|LDA + BoW|16|
+|LDA + TF-IDF|16|
+|BERT + UMAP + HDBSCAN|60|
 
 ---
 ### You can check model [here](https://nbviewer.org/github/Layrin14/Indonesia-Fake-News-Headline-Topic-Modeling/blob/master/Topic_modeling.ipynb)
