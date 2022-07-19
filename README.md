@@ -11,12 +11,12 @@ Goal of this project is to see which topics that are often made into fake news u
 
 ## Conclusion / Result
 
-LDA model was able to be fitted with two different corpus, Bag of Words corpus and TF-IDF corpus. LDA + BoW model produces a coherence score of 0.58 with total 14 topics. While LDA + TF-IDF model produces higher coherence score of 0.63 with the more number of topics, which is 18 topics in total. As for BERT, the model produces ~60 topics. The result of the 3 model are presented below in the form of a table:
+LDA model was able to be fitted with two different corpus, Bag of Words corpus and TF-IDF corpus. LDA + BoW model produces a coherence score of 0.57 with total 18 topics. While LDA + TF-IDF model produces higher coherence score of 0.63 with the same amount of topics, which is 18 topics in total. As for BERT, the model produces ~60 topics. The result of the 3 model are presented below in the form of a table:
 
 |Model|Number of Topics|
 |:---:|:---:|
-|LDA + BoW|16|
-|LDA + TF-IDF|16|
+|LDA + BoW|18|
+|LDA + TF-IDF|18|
 |BERT + UMAP + HDBSCAN|60|
 
 ---
