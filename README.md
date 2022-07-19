@@ -1,4 +1,4 @@
-# Indonesian Fake News Headline Topic Modeling w/ LDA (Latent Dirichlet Allocation)
+# Indonesian Fake News Headline Topic Modeling 
 
 ## Introduction / Motivation <a class="anchor" name="chapter1"></a>
 Internet is a place used by almost all citizens in the world to search news articles, including Indonesian citizens. Because of the ease of accessing the internet, it is often used as a place to spread fake news. Those fake news has titles that can deceive people to read it (clickbait) by writing about hot topics or famous figures such as religion issues or figures like president. Based on these titles, this notebook will conduct topic modeling to see which topics are often made into fake news.
